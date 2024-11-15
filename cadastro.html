@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro2.css">
+    <title>Formulário Clínica Cardiológica</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="início.html">
+                <img src="logo.png" alt="Clínica Cardiológica">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="início.html">Início</a></li>
+                <li><a href="link_para_consultas.html">Consultas</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li class="login"><a href="login.html" style="color: white;">Faça login</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector("nav ul.menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+
+    <div class="container">
+        <form action="#" method="post">
+            <div class="form-section">
+                <h2>Informações Pessoais</h2>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="data-nascimento">Data de nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero" required>
+                    <option value=></option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="cpf">CPF:</label>
+                <input type="cpf" id="cpf" name="cpf" required>
+
+                <label for="rg">RG:</label>
+                <input type="rg" id="rg" name="rg" required>
+            </div>
+
+            <div class="form-section">
+                <h2>Informações de Contato</h2>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-section">
+                <h2>Informações de Seguro Saúde</h2>
+
+                <label for="seguradora">Seguradora:</label>
+                <input type="text" id="seguradora" name="seguradora">
+
+                <label for="apolice">Número da apólice:</label>
+                <input type="text" id="apolice" name="apolice">
+
+                <label for="segurado">Número de identificação do segurado:</label>
+                <input type="text" id="segurado" name="segurado">
+            </div>
+
+            <div class="form-section">
+                <h2>Histórico Médico</h2>
+
+                <label for="genero">Histórico familiar de problemas cardíacos:</label>
+                <select id="genero" name="historico-familiar" required>
+                    <option value=></option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+
+
+                <label for="historico-doenças">Histórico de doenças anteriores:</label>
+                <select id="historico-doenças" name="historico-doenças" required>
+                    <option value=></option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+
+                <label for="medicamentos">Algum medicamento em uso?</label>
+                <input type="text" id="medicamento" name="medicamento">
+
+            </div>
+
+            <div class="form-section">
+                <h2>Estilo de Vida</h2>
+
+                <label for="niveis atividades">Níveis de atividade física:</label>
+                <select id="niveis atividades" name="niveis atividades" required>
+                    <option value=></option>
+                    <option value="Sedentário">Sedentário</option>
+                    <option value="Levemente Ativo">Levemente Ativo</option>
+                    <option value="Moderadamente Ativo">Moderadamente Ativo</option>
+                    <option value="Muito Ativo">Muito Ativo</option>
+                </select>
+
+                <label for="consumo-alcool">Consumo de álcool:</label>
+                <select id="consumo-alcool" name="consumo-alcool" required>
+                    <option value=></option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+
+                <label for="consumo-tabaco">Consumo de tabaco:</label>
+                <select id="consumo-tabaco" name="consumo-tabaco" required>
+                    <option value=></option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <h2>Alergias</h2>
+
+                <label for="alergias">Contém algum tipo de alergia?</label>
+                <input type="text" id="alergia" name="alergia">
+            </div>
+
+            <div class="form-section">
+                <h2>Informações de Emergência</h2>
+
+                <label for="contato-emergencia">Contato de emergência (nome e telefone):</label>
+                <input type="text" id="contato-emergencia" name="contato-emergencia" required>
+            </div>
+
+            <div class="form-section">
+                <h2>Crie uma senha</h2>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="confirmar-senha">Confirme a senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="address">
+            <h3>Unidade Tiradentes</h3>
+            <p>Av. Tiradentes, 615 - Bom Retiro</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 01101-010</p>
+        </div>
+        <div class="address">
+            <h3>Unidade Ibirapuera</h3>
+            <p>Rua Borges Lagoa, 1065 - Vila Clementino</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 040038-032</p>
+        </div>
+        <div class="address">
+            <h3>Unidade Cachoeirinha</h3>
+            <p>Av. Parada Pinto, 99 - Vila Nova Cachoeirinha</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 02612-120</p>
+        </div>
+    </footer>
+</body>
+</html>

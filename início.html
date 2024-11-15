@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Cardiológica</title>
+    <link rel="stylesheet" type="text/css" href="início2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="início.html">
+                <img src="logo.png" alt="Clínica Cardiológica">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="início.html">Início</a></li>
+                <li><a href="Login.html">Consultas</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li class="login"><a href="login.html" style="color: white;">Faça login</a></li>
+            </ul>
+            
+        </nav>
+        <!-- Remova o botão de login do local original -->
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector("nav ul.menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+    
+    <div class="image-section left-section">
+        <img src="consulta.jpg" alt="Imagem à Esquerda">
+        <a href="login.html"><button class="button">Consulta Presencial</button></a>
+    </div>
+    
+    <div class="image-section right-section">
+        <img src="virtual.jpg" alt="Imagem à Direita">
+        <a href="login.html"><button class="button">Consulta Online</button></a>
+    </div>
+
+    <div class="image-container">
+        <img src="passos.png" alt="Descrição da Imagem">
+    </div>
+
+    <div class="info-container">
+        <div class="info-section">
+            <div class="info-item">
+                <div class="info-text">
+                    <h3>Perigos do Descuido:</h3>
+                    <p>"Descuidar da saúde do coração aumenta o risco de doenças cardiovasculares, que são responsáveis por mais de 17 milhões de mortes anuais."</p>
+                    <p>"Fatores de risco ignorados, como dieta desequilibrada e tabagismo, podem levar a ataques cardíacos e AVCs."</p>
+                    <p>"A hipertensão, negligenciada, sobrecarrega o coração, sendo uma das principais causas de morte."</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="info-section">
+            <div class="info-item">
+                <div class="info-text">
+                    <h3>Importância de Marcar Consultas:</h3>
+                    <p>"Consultas regulares permitem avaliar fatores de risco, personalizando estratégias de prevenção."</p>
+                    <p>"Exames de rotina detectam precocemente problemas cardíacos, melhorando as chances de tratamento."</p>
+                    <p>"Consultas periódicas possibilitam discutir hábitos de vida, receber orientação personalizada e estabelecer metas."</p>
+                    <p>"Prevenção é a chave: consultas regulares são um investimento na saúde cardiovascular a longo prazo."</p>
+                    <p>"Check-ups monitoram a saúde cardíaca e oferecem conselhos sobre dieta, exercícios e gestão do estresse."</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="info-section">
+            <div class="info-item">
+                <div class="info-text">
+                    <h3>Manter um Coração Saudável:</h3>
+                    <p>"Adote uma dieta equilibrada com frutas, vegetais, grãos integrais e proteínas magras para nutrir o coração."</p>
+                    <p>"Exercícios regulares fortalecem o coração, melhoram a circulação e reduzem os riscos de doenças cardíacas."</p>
+                    <p>"Gerencie o estresse com técnicas como meditação e ioga para promover a saúde mental e cardiovascular."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <footer>
+        <div class="address">
+            <h3>Unidade Tiradentes</h3>
+            <p>Av. Tiradentes, 615 - Bom Retiro</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 01101-010</p>
+        </div>
+        <div class="address">
+            <h3>Unidade Ibirapuera</h3>
+            <p>Rua Borges Lagoa, 1065 - Vila Clementino</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 040038-032</p>
+        </div>
+        <div class="address">
+            <h3>Unidade Cachoeirinha</h3>
+            <p>Av. Parada Pinto, 99 - Vila Nova Cachoeirinha</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 02612-120</p>
+        </div>
+    </footer>
+</body>
+</html>
