@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Cardiológica</title>
+    <link rel="stylesheet" href="login2.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="início.html">
+                <img src="logo.png" alt="Clínica Cardiológica">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="início.html">Início</a></li>
+                <li><a href="link_para_consultas.html">Consultas</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="unidades.html">Sobre Nós</a></li>
+                <li class="login"><a href="login.html" style="color: white;">Faça login</a></li>
+            </ul>
+            
+        </nav>
+        <!-- Remova o botão de login do local original -->
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector("nav ul.menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+
+<div class="container">
+    <div class="image-container">
+        <img src="imagemlogin.jpg" alt="Imagem de Login" class="login-image">
+    </div>
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Não possui cadastro? <a href="cadastro.html">Cadastre-se agora</a></p>
+    </div>
+</div>
+
+
+<footer>
+        <div class="address">
+            <h3>Unidade Tiradentes</h3>
+            <p>Av. Tiradentes, 615 - Bom Retiro</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 01101-010</p>
+        </div>
+        <div class="address">
+            <h3>Unidade Ibirapuera</h3>
+            <p>Rua Borges Lagoa, 1065 - Vila Clementino</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 040038-032</p>
+        </div>
+        <div class="address">
+            <h3>Unidade Cachoeirinha</h3>
+            <p>Av. Parada Pinto, 99 - Vila Nova Cachoeirinha</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 02612-120</p>
+        </div>
+    </footer>
+
+</body>
+</html>

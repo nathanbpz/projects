@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento de Consulta</title>
+  <link rel="stylesheet" type="text/css" href="agendamento2.css">
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <a href="início.html">
+                <img src="logo.png" alt="Clínica Cardiológica">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="início.html">Início</a></li>
+                <li><a href="link_para_consultas.html">Consultas</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li class="login"><a href="login.html" style="color: white;">Faça login</a></li>
+            </ul>
+            
+        </nav>
+
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+  <div class="container">
+    <h1>Agendamento de Consulta</h1>
+    <form id="appointment-form">
+      <label for="day">Dia da semana:</label>
+      <select id="day">
+        <option value=></option>
+        <option value="segunda">Segunda-feira</option>
+        <option value="terca">Terça-feira</option>
+        <option value="quarta">Quarta-feira</option>
+        <option value="quinta">Quinta-feira</option>
+        <option value="sexta">Sexta-feira</option>
+      </select>
+
+      <label for="time">Horário disponível:</label>
+      <select id="time">
+        <option value=></option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+      </select>
+
+      <label for="undidade">Unidade Escolhida:</label>
+      <select id="unidade">
+        <option value=></option>
+        <option value="Tiradentes">Tiradentes</option>
+        <option value="Ibirapuera">Ibirapuera</option>
+        <option value="Cachoeirnha">Cachoeirinha</option>
+      </select>
+
+      <button type="submit">Agendar Consulta</button>
+    </form>
+  </div>
+  <footer>
+    <div class="address">
+        <h3>Unidade Tiradentes</h3>
+        <p>Av. Tiradentes, 615 - Bom Retiro</p>
+        <p>São Paulo-SP</p>
+        <p>CEP: 01101-010</p>
+    </div>
+    <div class="address">
+        <h3>Unidade Ibirapuera</h3>
+        <p>Rua Borges Lagoa, 1065 - Vila Clementino</p>
+        <p>São Paulo-SP</p>
+        <p>CEP: 040038-032</p>
+    </div>
+    <div class="address">
+        <h3>Unidade Cachoeirinha</h3>
+        <p>Av. Parada Pinto, 99 - Vila Nova Cachoeirinha</p>
+        <p>São Paulo-SP</p>
+        <p>CEP: 02612-120</p>
+    </div>
+</footer>
+</body>
+
+</html>

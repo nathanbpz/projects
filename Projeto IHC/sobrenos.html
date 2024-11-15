@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Cardiológica</title>
+    <link rel="stylesheet" type="text/css" href="sobrenos2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="início.html">
+                <img src="logo.png" alt="Clínica Cardiológica">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="início.html">Início</a></li>
+                <li><a href="link_para_consultas.html">Consultas</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li class="login"><a href="login.html" style="color: white;">Faça login</a></li>
+            </ul>
+            
+        </nav>
+        <!-- Remova o botão de login do local original -->
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector("nav ul.menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+
+    <section>
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo à Vital Cardio, o seu parceiro dedicado à saúde cardíaca e ao bem-estar integral. Na busca incessante pela excelência em cuidados cardiológicos, a Vital Cardio destaca-se como uma clínica comprometida em proporcionar serviços de alta qualidade, aliando conhecimento especializado a uma abordagem humanizada.</p>
+
+        <h3>Missão</h3>
+        <p>Nosso compromisso é promover a saúde cardiovascular, oferecendo diagnósticos precisos, tratamentos inovadores e um atendimento personalizado. Na Vital Cardio, buscamos não apenas tratar condições cardíacas, mas também educar e capacitar nossos pacientes para que possam tomar decisões informadas sobre sua saúde.</p>
+
+        <h3>Visão</h3>
+        <p>Almejamos ser referência em cardiologia, sendo reconhecidos pela excelência técnica, empatia no atendimento e pelo constante investimento em tecnologia e pesquisa. Buscamos continuamente superar expectativas, contribuindo para a construção de uma comunidade mais saudável e consciente.</p>
+
+        <h3>Valores</h3>
+        <ul>
+            <li><strong>Ética Profissional:</strong> Agimos com integridade, respeito e transparência em todas as interações, garantindo a confiança dos nossos pacientes.</li>
+            <li><strong>Atendimento Humanizado:</strong> Compreendemos as necessidades únicas de cada paciente, priorizando uma abordagem compassiva e acolhedora em todos os momentos.</li>
+            <li><strong>Excelência Técnica:</strong> Investimos constantemente na atualização de conhecimentos e na adoção das mais recentes tecnologias, assegurando a prestação de serviços cardiológicos da mais alta qualidade.</li>
+            <li><strong>Colaboração:</strong> Promovemos uma cultura colaborativa entre os membros da equipe, reconhecendo que a sinergia entre profissionais é essencial para o sucesso e para a melhor experiência do paciente.</li>
+        </ul>
+
+        <h3>Equipe</h3>
+        <p>Nossa equipe é composta por profissionais altamente qualificados, especializados nas diversas áreas da cardiologia. Cada membro da Vital Cardio compartilha do compromisso em oferecer cuidados excepcionais, trabalhando em conjunto para a promoção da saúde cardiovascular.</p>
+
+        <h3>Compromisso Social</h3>
+        <p>Além do compromisso com a saúde individual, a Vital Cardio também se empenha em contribuir para a saúde da comunidade. Participamos ativamente de iniciativas sociais e educacionais, visando a disseminação de informações sobre prevenção e promoção da saúde cardíaca.</p>
+
+        <p>Na Vital Cardio, entendemos que cada batimento cardíaco é único e valioso. Ao escolher nossos serviços, você está optando por um cuidado compassivo e especializado que visa não apenas tratar condições cardíacas, mas também melhorar a qualidade de vida. Junte-se a nós nesta jornada em direção a um coração saudável e uma vida plena.</p>
+    </section>
+
+    <footer>
+        <div class="address">
+            <h3 style="color: white;">Unidade Tiradentes</h3>
+            <p>Av. Tiradentes, 615 - Bom Retiro</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 01101-010</p>
+        </div>
+        <div class="address">
+            <h3 style="color: white;">Unidade Ibirapuera</h3>
+            <p>Rua Borges Lagoa, 1065 - Vila Clementino</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 040038-032</p>
+        </div>
+        <div class="address">
+            <h3 style="color: white;">Unidade Cachoeirinha</h3>
+            <p>Av. Parada Pinto, 99 - Vila Nova Cachoeirinha</p>
+            <p>São Paulo-SP</p>
+            <p>CEP: 02612-120</p>
+        </div>
+    </footer>
+</body>
+</html>
